@@ -1,0 +1,23 @@
+@import 'src/assets/scss/variables';
+
+.container {
+  height: 100%;
+  background: linear-gradient(to right, #ece9e6, #ffffff)
+}
+.btnContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
+  :global {
+    .ant-btn > span {
+      font-size: 25px;
+      color: $almost-black
+    }
+    :hover {
+      transform: scale(1.1);
+    }
+  }
+}

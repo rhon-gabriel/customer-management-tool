@@ -1,0 +1,121 @@
+@import "src/assets/scss/variables";
+
+.orderNumber {
+  color: $mint-green-logo;
+  font-weight: 500;
+  .img {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+:global {
+  .customerTable {
+    .ant-table table {
+      background: $white-smoke;
+      border-spacing: 0 8px;
+      position: relative;
+      border-collapse: separate;
+      color: $dark-grey;
+      font-weight: 500;
+    }
+
+    .ant-table-tbody {
+      .customerTableRow {
+        position: relative;
+        background: transparent;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+        transition: all 0.3s ease;
+        backface-visibility: hidden;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 80px;
+
+        > td {
+          background: #fff;
+          &:first-child {
+            padding: 0;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          z-index: 1;
+          box-shadow: 1px 2px 20px -4px $dark-grey;
+        }
+      }
+    }
+
+    .ant-table-thead > tr > th {
+      padding: 8px 16px;
+      background: transparent;
+      border-bottom: none;
+      color: $medium-grey;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .ant-table-tbody > tr > td {
+      &:first-child {
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &:last-child {
+        overflow: hidden;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    .ant-pagination-item {
+      background-color: transparent;
+      border: none;
+      color: $almost-black;
+      font-size: 14px;
+    }
+    .ant-pagination-item-active {
+      background-color: $forrest-green;
+      padding: 15px;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .ant-pagination-item-active a {
+      color: $white;
+      font-size: 14px;
+      font-weight: 600;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &:hover,
+      &:focus {
+        color: $dark-grey;
+      }
+    }
+
+    .ant-pagination-prev {
+      color: $medium-grey;
+      font-weight: 600;
+      margin-right: 15px;
+    }
+
+    .ant-pagination-next {
+      font-size: 14px;
+      font-weight: 600;
+      color: $forrest-green;
+      margin-right: 15px;
+    }
+  }
+}

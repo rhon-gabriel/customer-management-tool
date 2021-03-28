@@ -1,0 +1,39 @@
+@import "src/assets/scss/variables";
+
+.container {
+  padding: 20px 40px;
+  color: $dark-grey;
+  .header {
+    background-color: $white;
+    padding: 20px;
+    color: $almost-black;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .customerDetailsContainer {
+    padding: 5px 15px;
+    margin: 20px;
+  }
+  .customerTable {
+    margin: 0 10px;
+    .customerTableHeader {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+    .customerTableHeaderText {
+      color: $almost-black;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .helpIcon {
+      font-size: 12px;
+      color: $almost-black;
+    }
+    .helpText {
+      font-size: 12px;
+      color: $mint-green-logo;
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "src/assets/scss/variables";
+
+.customerDetails {
+  float: right;
+  width: 80%;
+  color: $dark-grey;
+  .body {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

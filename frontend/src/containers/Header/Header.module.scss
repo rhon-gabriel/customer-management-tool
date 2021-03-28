@@ -1,0 +1,16 @@
+@import "src/assets/scss/variables";
+
+.container {
+  .icon {
+    font-size: 24px;
+    padding: 0 20px;
+    font-weight: 600;
+    color: $mint-green-logo;
+  }
+  :global {
+    .ant-btn > span {
+      color: $almost-black;
+      font-size: 16px;
+    }
+  }
+}
